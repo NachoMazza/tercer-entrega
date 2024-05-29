@@ -1,0 +1,30 @@
+@import "../utilidades/variables";
+
+/*Estilo Pie de Página*/ 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px;    
+    background-image: url(..//img/pie-de-pagina.jpg);
+    height: 30vh;
+    background-size: cover;
+    justify-content: space-between;
+    div{
+        nav{
+            a{
+                display: block;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: $color-diferencial;
+                font-style: italic;
+                letter-spacing: 3px;
+                font-size: 20px;
+                margin: 10px 40px;
+                padding: 10px 20px;
+            }
+        }
+    } 
+    .mapa{
+        margin: 20px; 
+    }
+    
+}

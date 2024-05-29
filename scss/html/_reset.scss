@@ -1,0 +1,12 @@
+@import "../utilidades/variables";
+
+/*Reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Color fondo pantalla*/
+body{
+    background-color: $color-principal;
+}

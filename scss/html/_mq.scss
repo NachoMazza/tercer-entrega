@@ -1,0 +1,196 @@
+@import "../utilidades/mixin";
+
+/*Modificaciones para mobile*/
+
+@media screen and (max-width: 500px){
+
+    /*Modificaciones para Menu Principal*/
+    header{
+        nav{
+            ul{
+                li{
+                    margin: 0px 1px;
+                }
+            }
+        }
+    }
+
+    /*Modificaciones para pantalla principal*/
+    .home{
+        div{
+            .videopublic{
+                display: none;
+            }
+        }
+    }
+    
+    
+/*Modificaciones para Pantalla Nosotros*/
+    .nosotros{
+        .portada{
+            display: none;
+        }
+    }
+/*Reacomodo Productos*/
+    .productos{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            margin: 10px 50px;
+            gap: 20px;    
+            div{
+                .descripcion{
+                    margin: 10px 0px;
+                    padding: 2px;
+                }
+            }
+    }
+
+    /*Modificaciones para Noticias*/
+    .noti{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px 50px;
+            margin: 5px 50px;
+    } 
+
+    /*Modificaciones para pantalla Contactos*/
+    .contactos {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            .seccion-uno{
+                margin: 5px 15px;
+                padding: 2px 10px;
+                div{
+                    .asesor{
+                        @include medidas (95%, 95%);
+                    }
+                    p{
+                        font-size: 17px;  
+                    }
+                }
+                
+            }
+            .seccion-dos{
+                align-items:center;
+                div{
+                    nav{
+                        a{
+                            display: none;
+                        }
+                    }
+                    #mapa1{
+                        @include medidas (110%, 90%);
+                        margin: 5px;
+                    }
+                }
+                #formu{
+                    font-size: 17px;
+                    margin: 10px;
+                    #caja{
+                        @include medidas(95%, 50%);
+                        
+                    }   
+                    
+                }
+            }
+    }
+/*Modificaciones para Footer*/
+      footer{
+        justify-content: center;
+        .mapa{
+            display: none;
+        }
+    }
+
+
+}
+
+
+/*Modificaciones para tablet*/
+
+@media screen and (min-width: 501px) and (max-width: 960px){
+
+    /*Modificaciones para pantalla principal*/
+  
+    main.home{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        div{
+            .videopublic{
+                @include medidas (100%, 90%);
+            }
+        }
+                
+    }
+    
+ /*Reacomodo Productos*/
+    .productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);   
+    }
+
+/*Modificaciones para Noticias*/
+    .noti{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+/*Modificaciones para Pantallas de Contactos*/
+    .contactos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .seccion-uno{
+            margin: 5px 15px;
+            padding: 2px 10px;
+            div{
+                .asesor{
+                    @include medidas (75%, 85%);
+                    margin: 5px;
+                }
+                p{
+                    font-size: 17px;  
+                }
+            }
+            
+        }
+        .seccion-dos{
+            align-items:center;
+
+            div{
+                nav{
+                    a{
+                        display: none;
+                    }
+                }
+                #mapa1{
+                    @include medidas (110%, 90%);
+                    margin: 5px;
+                }
+            }
+            #formu{
+                font-size: 17px;
+                margin: 10px;
+                #caja{
+                    @include medidas(95%, 50%);
+                    
+                }   
+                
+            }
+        }
+}
+
+/*Modificaciones Footer*/
+    footer{
+        justify-content: center;
+        align-items: center;  
+
+        .mapa{
+            @include medidas (30%, 65%);
+                       
+                        
+        }
+    }
+}
+
+
+

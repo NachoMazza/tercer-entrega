@@ -1,0 +1,31 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*Estilo de Nosotros*/
+.nosotros{
+    #tit{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        margin: 10px 15px;
+        padding: 5px;
+        span{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: $color-destacado;
+        }
+        }
+    .portada{
+        @include medidas (100%, 250px);
+        margin: 15px 10px;
+        
+        
+    }    
+    }
+

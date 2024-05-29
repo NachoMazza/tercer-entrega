@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Declaro Bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Declaro CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contactos - DSA</title>
+</head>
+<body>
+
+    <!--Logo Inicio y Barra de Menu Principal-->
+
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img class="imagen" src="../img/LOGO-DSA1.jpg" alt="Logo de la Empresa">
+            </a>
+        </nav>
+        
+        <nav>
+            
+        <ul class="nav justify-content-end">
+            
+
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../page/nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../page/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../page/novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../page/contactos.html">Contactos</a>
+              </li>
+          </ul>
+    </header>
+    
+    <!--Columna 1 : asesores - Columna 2: mapa, redes y formulario-->
+   
+    <main class="contactos">
+        <section class="seccion-uno">
+            <div>
+                <img class="asesor" src="../img/vendedor-uno-mauro.PNG" alt="Foto Asesor Mauro">
+            </div>
+            <div>  
+                <p>
+                    Nombre y Apellido: Mauro Carioni   
+                </p>
+                <p>
+                    Cargo: Vendedor 
+                </p>
+                <p>
+                    Teléfono: 3564-335582
+                </p>
+            </div>
+            <div>
+                <img class="asesor" src="../img/vendedor-dos-sergio.PNG" alt="Foto Asesor Sergio">
+
+            </div>
+            <div>
+              
+                <p>
+                    Nombre y Apellido: Sergio Bocco   
+                </p>
+                <p>
+                    Cargo: Vendedor 
+                </p>
+                <p>
+                    Teléfono: 3564-568563
+                </p>
+            </div>
+            <div>
+                <img class="asesor" src="../img/vendedor-tres-maciel.PNG" alt="Foto Asesor Maciel">
+            </div>
+            <div> 
+                <p>
+                    Nombre y Apellido: Maciel Pellegrini   
+                </p>
+                <p>
+                    Cargo: Vendedor 
+                </p>
+                <p>
+                    Teléfono: 3564-313131
+                </p>
+            </div>
+           
+        </section>
+        <section class="seccion-dos">
+            <div>
+                <iframe id="mapa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.2286689602106!2d-62.30165372505733!3d-31.407825295836258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb322f37de04ef%3A0x41c100a2ff54cd9b!2sDSA%20SERVICIOS!5e0!3m2!1ses!2sar!4v1712503741076!5m2!1ses!2sar" width="200%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+            <div>
+                <nav>
+                    <a href="https://www.instagram.com/dsaservicios/?hl=es">
+                        Instagram
+                    </a>  
+                    <a href="x">
+                        Linkedin
+                    </a>  
+                    <a href="x">
+                        Facebook
+                    </a>  
+                </nav>
+            </div>
+            <div id="formu">
+                <form action="form.php" method="post">
+                    <span>
+                        <label for="">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </span>
+                    
+                    <span>
+                        <label for="">Teléfono de Contacto</label>
+                        <input type="number" name="numero" id="numero">
+                    </span>
+                    
+                    <p>Comentarios</p>
+                    <textarea name="" id="caja" cols="50%" rows="10%"></textarea>
+                    <span>
+                        <p>Acepto los términos y condiciones</p>
+                    <input type="checkbox" name="" id="">
+                    </span>
+                    
+                
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+
+    <footer>
+        <div>
+            <nav>
+                
+                    <a href="https://www.instagram.com/dsaservicios/?hl=es">
+                        Instagram
+                    </a>
+                
+
+                    <a href="Invento">
+                        Linkedin
+                    </a>
+
+                    <a href="Invento">
+                        Facebook
+                    </a>
+                
+                
+            </nav>
+        </div>      
+
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.2286689602106!2d-62.30165372505733!3d-31.407825295836258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb322f37de04ef%3A0x41c100a2ff54cd9b!2sDSA%20SERVICIOS!5e0!3m2!1ses!2sar!4v1712716813816!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+        
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
